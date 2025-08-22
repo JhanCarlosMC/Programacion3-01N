@@ -6,7 +6,7 @@ defmodule Util do
   @doc """
     Displays a message using a Java dialog.
   """
-  def show_message(message, :string) do
+  def show_message(message) do
     System.cmd("java", ["-cp", ".", "Mensaje", message])
   end
 
