@@ -17,7 +17,7 @@ defmodule UtilTest do
       |> String.to_integer()
     rescue
       ArgumentError ->
-        IO.puts(:error, "Error: Input is not a valid integer.")
+        show_message("Error: Input is not a valid integer.")
 
       message
       |> input(:integer)
@@ -31,8 +31,8 @@ defmodule UtilTest do
       |> String.to_float()
     rescue
       ArgumentError ->
-        IO.puts(:error, "Error: Input is not a valid float.")
-
+        show_message("Error: Input is not a valid float.")
+        
       message
       |> input(:float)
     end
