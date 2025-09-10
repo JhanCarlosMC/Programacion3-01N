@@ -21,7 +21,7 @@ defmodule InventarioProductos do
   # 3. Usar Enum.map/2 para aumentar en un 10% el precio de todos los productos
   def aumentar_precio(productos) do
     productos_actualizados = Enum.map(productos, fn producto ->
-      Map.update!(producto, :precio, fn precio -> precio * 1.1 end)
+      %{producto | precio: producto.precio * 1.1}
     end)
     IO.puts("Productos con precios aumentados: #{inspect(productos_actualizados)}")
   end
