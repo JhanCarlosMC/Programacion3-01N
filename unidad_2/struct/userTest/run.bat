@@ -1,0 +1,6 @@
+@echo off
+echo 🧹 Eliminando archivos .beam...
+del *.beam
+
+echo ⚙️ Compilando archivos .ex...
+elixirc *.ex
