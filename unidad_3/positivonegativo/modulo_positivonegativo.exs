@@ -33,8 +33,6 @@ defmodule Test do
       IO.puts(respuesta)
     end)
 
-  end
-
   def run do
     list = [10, -5, 0, 3, -1]
     tiempoSecuencial = Benchmark.determinar_tiempo_ejecucion(
@@ -42,8 +40,10 @@ defmodule Test do
 
     IO.puts("Tiempo secuencial: #{tiempoSecuencial} microsegundos")
   end
-
+  
 end
+
+
 
 
 
